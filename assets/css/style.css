@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Raleway:400,600,700|Sacramento');
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+/*    font-family: 'Josefin Sans', sans-serif;*/
+/*    font-family: 'Sacramento', cursive;*/
+    font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+}
+
+/* set style */
+
+p {
+    color: #616161;
+    line-height: 26px;
+    text-shadow: 0px 1px 0px rgba(97, 97, 97, 0.32);
+}
+
+.responsive-menu-wrap{display: none;}
+
+
+/*
+background images 
+*/
+
+.slide-bg-1{background-image: url(../images/background/bg-1.jpg);}
+.slide-bg-2{background-image: url(../images/background/bg-2.jpg);}
+.slide-bg-3{background-image: url(../images/background/bg-3.jpg);}
+.counter-area{background-image: url(../images/background/counter.jpg);}
+
+/*
+...... header area
+*/
+
+.void-header-area {
+    position: absolute;
+    width: 100%;
+    left:  0;
+    top: 0;
+    padding: 35px 0;
+    z-index: 2;
+}
+.black{
+    background: rgba(0,0,0,.6);
+    height: 80px;
+    padding: 30px 50px;
+    position: fixed;
+    box-sizing: border-box;
+    transition: ease-out .6s;
+
+}
+
+.logo {position: relative;}
+
+.logo img {
+    width: 100px;
+}
+
+.mainmenu {
+    position:  relative;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: right;
+}
+
+.mainmenu ul {
+    margin:  0;
+    padding:  0;
+    list-style: none;
+}
+
+.mainmenu li {
+    display:  inline-block;
+    position: relative;
+}
+
+.mainmenu li a {
+    color: #fff;
+    display:  block;
+    padding: 0 15px;
+    letter-spacing: 2px;
+}
+.mainmenu li:hover a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: ease-in .2s;
+}
+.mainmenu li a:enabled{
+    text-decoration: none;
+}
+
+
+.active-class{
+    color: #74d8e5 !important;
+}
+
+.active-class:active{
+    text-decoration: none;
+}
+
+/*
+...... Banner area
+*/
+
+
+.void-banner-area, .void-slider-area, .void-slider-area div {
+    height: 100vh;
+}
+.void-banner-area div.item-tablecell, .void-banner-area div.item-tablecell div {
+    height:  auto;
+}
+.slide-item {
+    position:  relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+
+
+.item-table {
+    display:  table;
+    width:  100%;
+    text-align:  center;
+}
+
+.item-tablecell {
+    display:  table-cell;
+    vertical-align:  middle;
+    color:  #fff;
+    text-transform:  uppercase;
+}
+
+.item-tablecell h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    word-spacing: 10px;
+    text-transform: none;
+    margin: 0;
+}
+
+.item-tablecell h1 {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    padding: 40px 0;
+    padding-top: 30px;
+    font-weight: 300;
+    line-height: 80px;
+    word-spacing: 10px;
+    letter-spacing: 8px;
+}
+
+a.void-more-btn {
+    margin: 40px 0;
+    color:  #fff;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+a.void-more-btn:hover {
+    text-decoration:  none;
+    color: #f9ad81;
+    border: 2px solid #f9ad81;
+    transition: ease-in .3s;
+}
+
+/*
+...... 
+*/
+
+.scroll-down-icon {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+}
+.scroll-down-icon h6 {
+    letter-spacing: 8px;
+    font-size: 10px;
+    color: #fff;
+}
+.scroll-down-icon:hover h6{
+    color: #f9ad81;
+    transition: .3s;
+}
+
+
+
+/*
+...... About section
+*/
+
+section.about-us {
+    padding:  0;
+}
+
+section.about-us h1, section.project-area h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    padding: 55px 0;
+    text-align: center;
+}
+section.about-us h1:before, section.project-area h1:before {
+    position:  absolute;
+    height: 24px;
+    width: 3px;
+    content: "";
+    background: #faad83;
+    transform: rotate(26deg);
+    left: 10px;
+    margin-top: 5px;
+}
+.mission-vission {
+    padding: 50px 10px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.mission-vission:hover{
+    box-shadow: 0 0 5px 3px #6161;
+    transition: .3s;
+}
+.mission-vission h4 {
+    text-transform: uppercase;
+    margin:  0;
+    padding: 20px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #464646;
+}
+
+section.about-us h6 {
+    margin:  0;
+    margin-bottom: 80px;
+    font-size:  16px;
+    text-align: center;
+    color: #8e8e8e;
+    line-height: 30px;
+}
+
+
+/*
+......gallery
+*/
+
+.gallery {
+    position:  relative;
+    margin-bottom: 100px;
+}
+.gallery img{
+    position: relative;
+    z-index: -1;
+}
+.gallery:after {
+    position:  absolute;
+    height:  100%;
+    width:  100%;
+    background: #070f1d;
+    content:  "";
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in .3s;
+    z-index: -1;
+}
+.gallery:hover:after{
+    visibility: visible;
+    opacity: .4;
+}
+.gallery .fa-arrow-right {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    font-size: 30px;
+    transition: .3s;
+    opacity: 0;
+    visibility:  hidden;
+}
+
+.photo-detail {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    color: #fff;
+    visibility:  hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.photo-detail h5 {
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.photo-detail p {
+    opacity: .8;
+}
+
+.gallery:hover .fa-arrow-right {
+    left: 60%;
+    visibility:  visible;
+    opacity: 1;
+}
+
+.gallery:hover .photo-detail {
+    visibility: visible;
+    opacity: 1;
+    right: 45%;
+}
+
+/*
+...... counter
+*/
+.counter-area:after {
+    position:  absolute;
+    height:  100%;
+    width:  100%;
+    top: 0;
+    left:  0;
+    background: #000;
+    content: "";
+    z-index: -1;
+    opacity: .5;
+}
+.counter-area{
+    position: relative;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.counter-area h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    margin: 16px 0;
+}
+.mr-right h3 {
+    margin-right: 26px;
+}
+.counter-area h5 {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+/*
+...... project section
+*/
+
+section.project-area h1 {
+    text-align: left;
+}
+section.project-area h1:before {
+    left: -40px;
+}
+.project-menu {
+    text-align:  center;
+    text-transform:  uppercase;
+    margin-bottom: 30px;
+}
+
+.project-menu ul.menu {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-menu li {
+    display:  inline-block;
+    position:  relative;
+}
+
+.project-menu li a {
+    color: #f9ad81;
+    display:  block;
+    padding: 4px 20px;
+    transition: .3s;
+}
+.project-pics img:hover{
+    transform: scale(.9);
+    transition: .5s;
+}
+.project-menu li:hover a {
+    background: #f9ad81;
+    color: #fff;
+    text-decoration:  none;
+}
+section.project-area .padding-override {
+    padding: 2px;
+}
+
+.view-btn {
+    position:  relative;
+    text-align:  center;
+    padding: 40px 0;
+}
+
+a.view-more-btn {
+    background: #f9ad81;
+    color:  #fff;
+    text-transform:  uppercase;
+    padding: 10px 20px;
+    transition: ease-in .3s;
+}
+
+a.view-more-btn:hover {
+    text-decoration:  none;
+    background: #d2895f;
+}
+
+
+/*
+...... instagram photos
+*/
+
+
+
+section.void-instagram-area {
+    background: #f1f1f1;
+    text-align: center;
+    padding-bottom: 95px;
+}
+
+section.void-instagram-area h6 {
+    font-size: 14px;
+    margin:  0;
+    padding: 33px 0;
+    color: #535353;
+    text-transform:  uppercase;
+}
+
+section.void-instagram-area h3 {
+    margin:  0;
+    padding: 0 0 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    color: #535353;
+    font-weight: 100;
+}
+
+/* flickity */
+.carousel-cell img{
+    max-width: 100%;
+    height: auto;
+}
+.carousel-cell {
+    width: 17%;
+    padding: 10px;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+}
+.flickity-button {
+    display: none;
+}
+
+
+
+/*
+...... footer area
+*/
+
+
+section.footer-area {
+    position:  relative;
+}
+
+.footer-logo {
+    width: 97px;
+    position: relative;
+    padding: 40px 0;
+}
+
+
+.before-after:before, .before-after:after {
+    height: 100%;
+    width:  3px;
+    background:  #f1f1f1;
+    content: "";
+    position:  absolute;
+    top: 0;
+}
+.before-after:before{
+    left: 0;
+}
+.before-after:after{
+    right: 0;
+}
+
+.footer-nav {
+    position:  relative;
+    text-transform:  uppercase;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-nav ul.footer-menu {
+    margin:  0;
+    padding:  0;
+    list-style: none;
+}
+
+.footer-nav li {
+    display:  inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+.footer-nav li a {
+    color: #1e1e1e;
+    font-weight: 600;
+    transition: ease-in .3s;
+}
+.footer-nav li:hover a {
+    text-decoration:  none;
+    color: #f9ad81;
+}
+
+.social-icons {
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+    height: 100%;
+}
+
+.social-icons ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+
+.social-icons li a {
+    color: #000;
+    font-size: 14px;
+}
+.social-icons li:hover a {
+    color: #f9ad81;
+    transition: ease .3s;
+}
+
+/* 
+.....................
+                     carousel fade css
+.....................
+*/
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+/*    font-family: 'Josefin Sans', sans-serif;*/
+/*    font-family: 'Sacramento', cursive;*/
